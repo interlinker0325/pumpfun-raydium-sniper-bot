@@ -11,14 +11,18 @@ const Statistics = () => {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.3,
+      threshold: 0.1,
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          entry.target.classList.add('animate-fade-in');
+          // Only add the class if it's not already added
+          if (!entry.target.classList.contains('animate-fade-in')) {
+            entry.target.classList.add('animate-fade-in');
+          }
+          entry.target.style.opacity = '1';
         }
       });
     }, options);
@@ -125,7 +129,8 @@ const Statistics = () => {
     <section 
       id="statistics" 
       ref={sectionRef}
-      className="relative py-20 px-6 md:px-10 opacity-0"
+      className="relative py-20 px-6 md:px-10 transition-opacity duration-700"
+      style={{ opacity: 0 }}
     >
       <div className="container max-w-7xl mx-auto">
         <div className="mb-12 text-center">

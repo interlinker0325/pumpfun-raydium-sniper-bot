@@ -5,6 +5,7 @@ import { Code, Repeat, ChevronsRight, Coins, LineChart, Database, ShieldCheck, R
 const Guide = () => {
   const [activeStep, setActiveStep] = useState(0);
   const sectionRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
   
   // Steps data
   const steps = [
@@ -34,14 +35,18 @@ const Guide = () => {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.3,
+      threshold: 0.1,
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Add animation classes when the section is visible
-          entry.target.classList.add('animate-fade-in');
+          setIsVisible(true);
+          // Only add the class if it's not already added
+          if (!entry.target.classList.contains('animate-fade-in')) {
+            entry.target.classList.add('animate-fade-in');
+          }
+          entry.target.style.opacity = '1';
         }
       });
     }, options);
@@ -70,7 +75,8 @@ const Guide = () => {
     <section 
       id="guide" 
       ref={sectionRef}
-      className="relative py-20 px-6 md:px-10 opacity-0"
+      className="relative py-20 px-6 md:px-10 transition-opacity duration-700"
+      style={{ opacity: 0 }}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background z-0"></div>
       
