@@ -18,9 +18,11 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
+      <div className="absolute top-0 left-0 w-full h-full star-field"></div>
+      <div className="absolute top-0 left-0 w-full h-full star-field-small"></div>
       <Navigation />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <Guide />
         <Statistics />

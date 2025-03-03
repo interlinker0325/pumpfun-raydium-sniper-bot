@@ -7,65 +7,65 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
+    --background: 220 40% 10%;
+    --foreground: 220 10% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card: 222 45% 15%;
+    --card-foreground: 220 10% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover: 222 45% 15%;
+    --popover-foreground: 220 10% 98%;
 
-    --primary: 222 89% 58%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 220 100% 60%;
+    --primary-foreground: 220 10% 98%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 222 30% 20%;
+    --secondary-foreground: 220 10% 98%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 222 30% 20%;
+    --muted-foreground: 220 10% 75%;
 
-    --accent: 262 83% 58%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 266 83% 58%;
+    --accent-foreground: 220 10% 98%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 220 10% 98%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 222 84% 48%;
+    --border: 222 30% 20%;
+    --input: 222 30% 20%;
+    --ring: 220 100% 60%;
 
     --radius: 0.7rem;
   }
 
   .dark {
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
+    --background: 220 40% 10%;
+    --foreground: 220 10% 98%;
 
-    --card: 222 47% 11%;
-    --card-foreground: 210 40% 98%;
+    --card: 222 45% 15%;
+    --card-foreground: 220 10% 98%;
 
-    --popover: 222 47% 11%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 222 45% 15%;
+    --popover-foreground: 220 10% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222 47% 11%;
+    --primary: 220 100% 60%;
+    --primary-foreground: 220 10% 98%;
 
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 222 30% 20%;
+    --secondary-foreground: 220 10% 98%;
 
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 222 30% 20%;
+    --muted-foreground: 220 10% 75%;
 
-    --accent: 262 83% 58%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 266 83% 58%;
+    --accent-foreground: 220 10% 98%;
 
     --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 220 10% 98%;
 
-    --border: 217 33% 17%;
-    --input: 217 33% 17%;
-    --ring: 212 27% 84%;
+    --border: 222 30% 20%;
+    --input: 222 30% 20%;
+    --ring: 220 100% 60%;
   }
 }
 
@@ -77,6 +77,8 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+    background-image: radial-gradient(circle at center, hsl(220, 40%, 13%) 0%, hsl(220, 40%, 7%) 70%);
+    background-attachment: fixed;
   }
 
   .text-balance {
@@ -106,14 +108,38 @@
   }
 
   .glass-card {
-    @apply bg-white bg-opacity-10 backdrop-blur-lg border border-white border-opacity-20 rounded-2xl shadow-lg;
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl shadow-lg;
   }
 
   .glass-card-dark {
-    @apply bg-black bg-opacity-10 backdrop-blur-lg border border-gray-700 border-opacity-20 rounded-2xl shadow-lg;
+    @apply bg-black/20 backdrop-blur-lg border border-white/5 rounded-2xl shadow-lg;
   }
 
   .shimmer {
-    @apply relative overflow-hidden before:absolute before:inset-0 before:-translate-x-full before:animate-shimmer before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent;
+    @apply relative overflow-hidden before:absolute before:inset-0 before:-translate-x-full before:animate-shimmer before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent;
+  }
+  
+  .space-glow {
+    box-shadow: 0 0 30px rgba(66, 135, 245, 0.15), 0 0 12px rgba(66, 135, 245, 0.1);
+  }
+  
+  .star-field {
+    @apply absolute inset-0 overflow-hidden z-0;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.3;
+  }
+  
+  .star-field-small {
+    @apply absolute inset-0 overflow-hidden z-0;
+    background-image: radial-gradient(white 0.5px, transparent 0.5px);
+    background-size: 25px 25px;
+    opacity: 0.2;
+  }
+  
+  .rocket-trail {
+    @apply absolute -z-10 w-6 h-32 rounded-full blur-xl opacity-60 bg-gradient-to-t from-blue-400 via-indigo-500 to-transparent;
+    transform: translateY(40px);
   }
 }
+

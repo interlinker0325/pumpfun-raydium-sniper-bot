@@ -1,6 +1,6 @@
 
 import { useEffect, useRef, useState } from 'react';
-import { ArrowRight, Code, Zap } from 'lucide-react';
+import { ArrowRight, Code, Rocket } from 'lucide-react';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,37 +40,49 @@ const Hero = () => {
       document.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
-  
+
   return (
     <div 
       ref={heroRef}
       id="hero" 
       className="relative min-h-screen flex flex-col items-center justify-center px-6 md:px-10 pt-24 pb-12 overflow-hidden"
     >
+      {/* Star field background */}
+      <div className="star-field"></div>
+      <div className="star-field-small"></div>
+      
       {/* Background elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/3 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl opacity-60 parallax" data-depth="-2"></div>
         <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl opacity-70 parallax" data-depth="-3"></div>
-        <div className="absolute -top-20 -right-20 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-30 parallax" data-depth="-1"></div>
+        <div className="absolute -top-20 -right-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl opacity-30 parallax" data-depth="-1"></div>
+      </div>
+      
+      {/* Rocket element */}
+      <div 
+        className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 parallax z-20" 
+        data-depth="5"
+        style={{ animation: 'float 6s ease-in-out infinite' }}
+      >
+        <div className="relative">
+          <div className="rocket-trail"></div>
+          <div className="w-20 h-20 md:w-24 md:h-24 glass-card-dark flex items-center justify-center space-glow animate-float">
+            <Rocket size={40} className="text-primary rotate-45" />
+          </div>
+        </div>
       </div>
       
       {/* 3D-like elements */}
       <div className="absolute top-1/4 left-1/4 transform -translate-x-1/2 parallax" data-depth="3">
-        <div className="w-16 h-16 md:w-20 md:h-20 bg-white rounded-2xl shadow-xl flex items-center justify-center rotate-12 animate-float">
+        <div className="w-16 h-16 md:w-20 md:h-20 glass-card-dark shadow-xl flex items-center justify-center rotate-12 animate-float">
           <Code size={32} className="text-primary" />
-        </div>
-      </div>
-      
-      <div className="absolute bottom-1/4 right-1/3 transform translate-x-1/2 parallax" data-depth="4">
-        <div className="w-16 h-16 md:w-20 md:h-20 bg-white rounded-2xl shadow-xl flex items-center justify-center -rotate-12 animate-float" style={{ animationDelay: '1s' }}>
-          <Zap size={32} className="text-accent" />
         </div>
       </div>
       
       {/* Main content */}
       <div className="relative z-10 max-w-5xl text-center">
-        <div className="mb-4 inline-flex items-center px-4 py-2 rounded-full border border-border bg-background/80 backdrop-blur-sm">
-          <span className="text-xs md:text-sm font-medium text-muted-foreground">Revolutionizing DeFi on Solana</span>
+        <div className="mb-4 inline-flex items-center px-4 py-2 rounded-full border border-white/10 bg-black/30 backdrop-blur-sm">
+          <span className="text-xs md:text-sm font-medium text-blue-300">Revolutionizing DeFi on Solana</span>
         </div>
         
         <h1 
@@ -80,15 +92,16 @@ const Hero = () => {
         >
           <span className="text-foreground">Solana Flashloan</span>
           <br />
-          <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Arbitrage Bot</span>
+          <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Arbitrage Bot</span>
         </h1>
         
         <p 
-          className={`text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 transition-all duration-1000 delay-300 ${
+          className={`text-lg md:text-xl text-blue-200 max-w-3xl mx-auto mb-10 transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          Leverage the power of flashloans to execute risk-free arbitrage opportunities across Solana DEXs, maximizing your profit with millisecond precision.
+          Leverage the power of flashloans to execute risk-free arbitrage opportunities across Solana DEXs, 
+          maximizing your profit with millisecond precision. <span className="text-blue-400">To the moon!</span>
         </p>
         
         <div 
@@ -96,12 +109,12 @@ const Hero = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <button className="px-8 py-4 bg-primary text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 group">
+          <button className="px-8 py-4 bg-primary text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 group space-glow">
             Start Trading
             <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
           </button>
           
-          <button className="px-8 py-4 bg-white/80 backdrop-blur-sm text-foreground border border-border rounded-full font-medium hover:bg-white transition-all flex items-center justify-center">
+          <button className="px-8 py-4 bg-black/30 backdrop-blur-sm text-foreground border border-white/10 rounded-full font-medium hover:bg-black/50 transition-all flex items-center justify-center">
             View Documentation
           </button>
         </div>
@@ -113,7 +126,7 @@ const Hero = () => {
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
-        <div className="relative w-full h-full overflow-hidden rounded-xl bg-gradient-to-br from-black/80 to-black/90 shadow-2xl">
+        <div className="relative w-full h-full overflow-hidden rounded-xl bg-gradient-to-br from-black/90 to-black/95 shadow-2xl">
           <div className="absolute inset-0.5 rounded-[10px] bg-gradient-to-br from-primary/20 to-accent/20 overflow-hidden">
             <div className="absolute inset-0 backdrop-blur-sm flex items-center justify-center">
               {/* Terminal-like interface */}
@@ -141,6 +154,7 @@ const Hero = () => {
                     <span className="inline-block animate-spin">⟳</span>
                     <span>Transaction in progress...</span>
                   </p>
+                  <p className="text-blue-400 mt-4">🚀 To the moon! 🚀</p>
                 </div>
               </div>
             </div>
@@ -148,10 +162,10 @@ const Hero = () => {
         </div>
         
         {/* Floating elements around the display */}
-        <div className="absolute -left-6 -bottom-6 w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center rotate-12 parallax" data-depth="2">
+        <div className="absolute -left-6 -bottom-6 w-12 h-12 glass-card-dark shadow-lg flex items-center justify-center rotate-12 parallax space-glow" data-depth="2">
           <span className="text-primary font-bold text-xl">S</span>
         </div>
-        <div className="absolute -right-4 -top-4 w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center -rotate-12 parallax" data-depth="2">
+        <div className="absolute -right-4 -top-4 w-12 h-12 glass-card-dark shadow-lg flex items-center justify-center -rotate-12 parallax space-glow" data-depth="2">
           <span className="text-accent font-bold text-xl">F</span>
         </div>
       </div>
