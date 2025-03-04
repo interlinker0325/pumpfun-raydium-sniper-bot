@@ -42,18 +42,29 @@ const Contact = () => {
     };
   }, []);
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async(e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      toast.success("Message sent successfully!");
-      setName('');
-      setEmail('');
-      setMessage('');
-      setIsSubmitting(false);
-    }, 1000);
+
+    try {
+      const response = await fetch("http://localhost:5000/sendEmail", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ name, email, message}),
+      });
+      if (response.ok) {
+        toast.success("Message sent successfully!");
+        setName('');
+        setEmail('');
+        setMessage('');
+        setIsSubmitting(false);
+      } else {
+        toast.error("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      toast.error("An error occurred. Please try again.");
+    }
+    setIsSubmitting(false);
   };
   
   const contactMethods = [
