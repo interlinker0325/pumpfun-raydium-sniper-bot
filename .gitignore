@@ -1,27 +1,89 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env*.local
+
 # Logs
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+lerna-debug.log
+.pnpm-debug.log
+.vscode/
 
-node_modules
-node_modules/*
-dist
-dist-ssr
-*.local
+# Build outputs
+dist/
+build/
+.next/
+out/
+.expo/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Babel & TypeScript cache
+.cache/
+.eslintcache/
+*.tsbuildinfo
+
+# Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# macOS files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-.env.*
-.env
+.AppleDouble
+.LSOverride
+
+# Linux files
+*.pid
+*.seed
+*.log
+*.pyc
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Docker & deployment
+docker-compose.override.yml
+docker-compose.yml
+.Dockerfile
+docker.env
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Jest
+jest/
+*.cache
+__snapshots__
+
+# Firebase & AWS
+.firebaserc
+.firebase/
+.aws/
+
+# Miscellaneous
+*.bak
+*.backup
+*.old
+*.swp
+*.swo
