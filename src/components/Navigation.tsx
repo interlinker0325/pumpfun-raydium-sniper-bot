@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
+import { VscRobot } from "react-icons/vsc";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,9 +43,9 @@ const Navigation = () => {
         <nav className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center space-glow">
-              <span className="text-white font-bold text-lg">SF</span>
+              <VscRobot size={30}/>
             </div>
-            <span className="font-display font-medium text-lg text-white">SolanaFlash</span>
+            <span className="font-display font-medium text-lg text-white">SolFlashBot</span>
           </div>
           
           <div className="hidden md:flex space-x-8">
@@ -75,11 +76,12 @@ const Navigation = () => {
           </div>
           
           <div className="hidden md:block">
-            <button
+            <a
+              href='https://t.me/bitfancy'
               className="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary/90 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary/50 shadow-md space-glow"
             >
               Get Started
-            </button>
+            </a>
           </div>
           
           <button

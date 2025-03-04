@@ -109,13 +109,13 @@ const Hero = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <button className="px-8 py-4 bg-primary text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 group space-glow">
+          <a href='https://t.me/bitfancy' className="px-8 py-4 bg-primary text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 group space-glow">
             Start Trading
             <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
-          </button>
+          </a>
           
           <button className="px-8 py-4 bg-black/30 backdrop-blur-sm text-foreground border border-white/10 rounded-full font-medium hover:bg-black/50 transition-all flex items-center justify-center">
-            View Documentation
+          Get expert guidance
           </button>
         </div>
       </div>

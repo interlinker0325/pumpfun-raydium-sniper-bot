@@ -103,7 +103,7 @@ const Guide = () => {
                   key={index}
                   className={`flex gap-5 p-5 rounded-xl transition-all duration-500 cursor-pointer ${
                     activeStep === index 
-                      ? 'bg-white shadow-lg scale-[1.02]' 
+                      ? 'bg-white shadow-lg scale-[1.02] text-gray-900' 
                       : 'bg-secondary/50 hover:bg-white/50'
                   }`}
                   onClick={() => setActiveStep(index)}
@@ -243,7 +243,7 @@ const Guide = () => {
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                   <Database className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-display font-semibold text-lg mb-2">Multi-DEX Support</h3>
+                <h3 className="font-display font-semibold text-lg mb-2 text-black">Multi-DEX Support</h3>
                 <p className="text-muted-foreground text-sm">Connect to all major Solana DEXs for maximum opportunity capture</p>
               </div>
               
@@ -251,7 +251,7 @@ const Guide = () => {
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                   <ShieldCheck className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-display font-semibold text-lg mb-2">Risk-Free Trading</h3>
+                <h3 className="font-display font-semibold text-lg mb-2 text-black">Risk-Free Trading</h3>
                 <p className="text-muted-foreground text-sm">No capital at risk with complete transaction rollback if unprofitable</p>
               </div>
               
@@ -259,7 +259,7 @@ const Guide = () => {
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                   <LineChart className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-display font-semibold text-lg mb-2">Real-time Analytics</h3>
+                <h3 className="font-display font-semibold text-lg mb-2 text-black">Real-time Analytics</h3>
                 <p className="text-muted-foreground text-sm">Live monitoring of your performance and market opportunities</p>
               </div>
               
@@ -267,7 +267,7 @@ const Guide = () => {
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                   <Rocket className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-display font-semibold text-lg mb-2">Auto-scaling</h3>
+                <h3 className="font-display font-semibold text-lg mb-2 text-black">Auto-scaling</h3>
                 <p className="text-muted-foreground text-sm">Dynamically adjust parameters based on market conditions</p>
               </div>
             </div>

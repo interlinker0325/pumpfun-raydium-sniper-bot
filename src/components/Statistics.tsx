@@ -159,12 +159,12 @@ const Statistics = () => {
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="text-muted-foreground">{stat.label}</div>
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-primary/50 flex items-center justify-center">
                   {stat.icon}
                 </div>
               </div>
               
-              <div className="text-2xl font-display font-bold mb-1">{stat.value}</div>
+              <div className="text-2xl font-display font-bold mb-1 text-gray-900">{stat.value}</div>
               
               <div className={`flex items-center text-sm ${stat.isPositive ? 'text-green-600' : 'text-red-500'}`}>
                 <span>{stat.change}</span>
@@ -180,7 +180,7 @@ const Statistics = () => {
           <div className={`lg:col-span-2 bg-white rounded-xl p-6 shadow-md transition-all duration-500 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`} style={{ transitionDelay: '400ms' }}>
-            <h3 className="font-display font-semibold text-lg mb-6">Profit Growth</h3>
+            <h3 className="font-display font-semibold text-lg mb-6 text-gray-900">Profit Growth</h3>
             <div className="h-80">
               <ResponsiveContainer width="100%" height="100%">
                 <AreaChart
@@ -224,7 +224,7 @@ const Statistics = () => {
           }`} style={{ transitionDelay: '500ms' }}>
             <div className="bg-white rounded-xl p-6 shadow-md h-full">
               <div className="flex items-center justify-between mb-6">
-                <h3 className="font-display font-semibold text-lg">Recent Transactions</h3>
+                <h3 className="font-display font-semibold text-lg text-gray-900">Recent Transactions</h3>
                 <button className="text-primary text-sm font-medium flex items-center">
                   View all <ArrowRight size={14} className="ml-1" />
                 </button>
@@ -240,7 +240,7 @@ const Statistics = () => {
                     <div className="flex-grow">
                       <div className="flex justify-between items-start">
                         <div>
-                          <p className="font-medium text-sm">{tx.route}</p>
+                          <p className="font-medium text-sm text-gray-900">{tx.route}</p>
                           <p className="text-xs text-muted-foreground">{tx.timestamp}</p>
                         </div>
                         <div className="text-right">

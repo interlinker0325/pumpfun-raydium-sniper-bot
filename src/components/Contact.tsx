@@ -26,7 +26,7 @@ const Contact = () => {
           if (!entry.target.classList.contains('animate-fade-in')) {
             entry.target.classList.add('animate-fade-in');
           }
-          entry.target.style.opacity = '1';
+          entry.target.style.opacity = '1'; 
         }
       });
     }, options);
@@ -59,27 +59,27 @@ const Contact = () => {
   const contactMethods = [
     {
       name: 'Email',
-      value: 'contact@solanaflash.com',
+      value: 'bitbanana717@gmail.com',
       icon: <Mail className="w-5 h-5" />,
-      href: 'mailto:contact@solanaflash.com',
+      href: 'mailto:bitbanana717@gmail.com',
     },
     {
       name: 'Telegram',
-      value: '@solanaflash',
+      value: '@bitfancy',
       icon: <MessageSquare className="w-5 h-5" />,
-      href: 'https://t.me/solanaflash',
+      href: 'https://t.me/bitfancy',
     },
     {
       name: 'Discord',
-      value: 'solanaflash',
+      value: 'bitbanana717',
       icon: <MessageSquare className="w-5 h-5" />,
       href: 'https://discord.gg/solanaflash',
     },
     {
       name: 'GitHub',
-      value: 'github.com/solanaflash',
+      value: 'github.com/bitfancy',
       icon: <Github className="w-5 h-5" />,
-      href: 'https://github.com/solanaflash',
+      href: 'https://github.com/bitfancy',
     },
   ];
   
@@ -108,7 +108,7 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Contact form */}
           <div className="bg-white rounded-xl shadow-lg p-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 text-gray-900">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
                 <input
@@ -181,12 +181,12 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="flex items-start p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all hover:-translate-y-1 group"
                 >
-                  <div className="mr-4 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <div className="mr-4 w-10 h-10 rounded-full bg-primary/50 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     {method.icon}
                   </div>
                   <div>
-                    <h4 className="font-medium text-lg">{method.name}</h4>
-                    <p className="text-muted-foreground text-sm">{method.value}</p>
+                    <h4 className="font-medium text-lg text-gray-900">{method.name}</h4>
+                    <p className="text-muted-foreground text-sm text-gray-500">{method.value}</p>
                   </div>
                 </a>
               ))}
