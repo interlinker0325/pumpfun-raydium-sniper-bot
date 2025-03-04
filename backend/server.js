@@ -1,9 +1,13 @@
-import dotenv from 'dotenv'
-import express from 'express'
-import cors from 'cors'
-import nodemailer from 'nodemailer'
+const dotenv = require("dotenv");
+const express = require('express')
+const cors = require('cors')
+const nodemailer = require('nodemailer')
+// import express from 'express';
+// import cors from 'cors';
+// import nodemailer from 'nodemailer';
 
-dotenv.config()
+
+dotenv.config();
 
 const app = express();
 const PORT = 5000;
@@ -13,15 +17,19 @@ app.use(cors());
 
 app.post("/sendEmail", async (req, res) => {
     const {name, email, message }= req.body;
+    console.log('name on backend -> ', req);
 
     const transporter = nodemailer.createTransport({
-        service: "gmail",
+        service: "Gmail",
+        host: "smtp.gmail.com",
+        port: 587,
+        secure: true,
         auth: {
-            user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASS,
+          user: process.env.EMAIL_USER,
+          pass: process.env.EMAIL_PASS,
         },
-    });
-
+      });
+    
     try {
         await transporter.sendMail ( {
             from: `"Contact Form" <${process.env.EMAIL_USER}>`,
@@ -39,5 +47,6 @@ app.post("/sendEmail", async (req, res) => {
         res.status(500).json({ success: false, message: "Email failed", error})
     }
 })
+
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
