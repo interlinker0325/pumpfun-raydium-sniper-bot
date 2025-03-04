@@ -13,6 +13,7 @@ yarn.lock
 .env.production
 .env.test
 .env*.local
+.env.*
 
 # Logs
 logs
