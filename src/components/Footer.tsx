@@ -13,7 +13,7 @@ const Footer = () => {
               <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center space-glow">
                 <span className="text-white font-bold text-lg">SF</span>
               </div>
-              <span className="font-display font-medium text-lg text-white">SolanaFlash</span>
+              <span className="font-display font-medium text-lg text-white">SolFlashBot</span>
             </div>
             
             <p className="text-white/70 mb-6 max-w-sm">
@@ -112,7 +112,7 @@ const Footer = () => {
         
         <div className="pt-8 mt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/50 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} SolanaFlash. All rights reserved.
+            © {new Date().getFullYear()} SolFlashBot. All rights reserved.
           </p>
           
           <div className="flex space-x-6">

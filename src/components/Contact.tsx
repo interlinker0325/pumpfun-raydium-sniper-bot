@@ -73,7 +73,7 @@ const Contact = () => {
       name: 'Discord',
       value: 'bitbanana717',
       icon: <MessageSquare className="w-5 h-5" />,
-      href: 'https://discord.gg/solanaflash',
+      href: 'https://discord.gg/7rw3HFYb',
     },
     {
       name: 'GitHub',
