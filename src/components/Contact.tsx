@@ -2,6 +2,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Mail, MessageSquare, Github, Send } from 'lucide-react';
 import { toast } from "sonner";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -47,19 +48,36 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("http://localhost:5000/sendEmail", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({ name, email, message}),
-      });
-      if (response.ok) {
+      // const response = await fetch("http://localhost:5000/sendEmail", {
+      //   method: "POST",
+      //   headers: {"Content-Type": "application/json"},
+      //   body: JSON.stringify({ name, email, message}),
+      // });
+      // if (response.ok) {
+      //   toast.success("Message sent successfully!");
+      //   setName('');
+      //   setEmail('');
+      //   setMessage('');
+      //   setIsSubmitting(false);
+      // } else {
+      //   toast.error("Failed to send message. Please try again.");
+      // }
+      const serviceId = 'service_oborch8';
+      const templateId = 'template_fl5bf6i';
+      const userId = 'If78ZXoGzM-Lr6t3K';
+      if (name && email && message) {
+        const templateParams = {
+          from_name: name,
+          from_email: email,
+          message: message,
+        };
+        await emailjs.send(serviceId, templateId, templateParams, userId);
         toast.success("Message sent successfully!");
         setName('');
         setEmail('');
         setMessage('');
-        setIsSubmitting(false);
       } else {
-        toast.error("Failed to send message. Please try again.");
+        toast.error("Please fill in all fields.");
       }
     } catch (error) {
       toast.error("An error occurred. Please try again.");
