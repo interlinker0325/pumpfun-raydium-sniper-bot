@@ -67,6 +67,7 @@ const Contact = () => {
       const userId = 'If78ZXoGzM-Lr6t3K';
       if (name && email && message) {
         const templateParams = {
+          to_name: 'Senior blockchain developer, David',
           from_name: name,
           from_email: email,
           message: message,
