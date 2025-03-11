@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from 'react';
 import { Send, Mail, Github } from 'lucide-react';
 import { FaTelegram, FaDiscord } from 'react-icons/fa';
@@ -82,16 +83,16 @@ const Contact = () => {
         <div className="mt-12 text-center">
           <h3 className="text-xl font-bold text-white mb-4">Connect With Us</h3>
           <div className="flex justify-center space-x-6">
-            <a href="mailto:support@example.com" className="text-blue-300 hover:text-blue-400 transition-colors">
+            <a href="mailto:bitbanana717@gmail.com" className="text-blue-300 hover:text-blue-400 transition-colors">
               <Mail size={24} />
             </a>
-            <a href="https://github.com/example" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-400 transition-colors">
+            <a href="https://github.com/bitfancy" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-400 transition-colors">
               <Github size={24} />
             </a>
-            <a href="https://telegram.me/example" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-400 transition-colors">
+            <a href="https://t.me/bitfancy" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-400 transition-colors">
               <FaTelegram size={24} />
             </a>
-            <a href="https://discord.gg/example" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-400 transition-colors">
+            <a href="https://discord.com/users/bitbanana717" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-400 transition-colors">
               <FaDiscord size={28} />
             </a>
           </div>

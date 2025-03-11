@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from 'react';
 
 const Pricing = () => {
@@ -85,7 +86,7 @@ const Pricing = () => {
             </div>
             <div className="text-center">
               <p className="text-3xl font-bold text-white mb-4">
-                0.5 <span className="text-blue-400">SOL</span>
+                2.5 <span className="text-blue-400">SOL</span>
                 <span className="text-sm font-normal block mt-1">per month</span>
               </p>
               <button className="w-full py-3 px-6 bg-primary text-white rounded-full font-medium hover:bg-primary/80 transition-colors duration-200 space-glow">
@@ -128,7 +129,7 @@ const Pricing = () => {
             </div>
             <div className="text-center">
               <p className="text-3xl font-bold text-white mb-4">
-                0.8 <span className="text-blue-400">SOL</span>
+                3.5 <span className="text-blue-400">SOL</span>
                 <span className="text-sm font-normal block mt-1">per month</span>
               </p>
               <button className="w-full py-3 px-6 bg-primary text-white rounded-full font-medium hover:bg-primary/80 transition-colors duration-200 space-glow">
@@ -171,7 +172,7 @@ const Pricing = () => {
             </div>
             <div className="text-center">
               <p className="text-3xl font-bold text-white mb-4">
-                1.2 <span className="text-blue-400">SOL</span>
+                5.0 <span className="text-blue-400">SOL</span>
                 <span className="text-sm font-normal block mt-1">per month</span>
               </p>
               <button className="w-full py-3 px-6 bg-primary text-white rounded-full font-medium hover:bg-primary/80 transition-colors duration-200 space-glow">
@@ -214,7 +215,7 @@ const Pricing = () => {
             </div>
             <div className="text-center">
               <p className="text-3xl font-bold text-white mb-4">
-                0.6 <span className="text-blue-400">SOL</span>
+                2.8 <span className="text-blue-400">SOL</span>
                 <span className="text-sm font-normal block mt-1">per month</span>
               </p>
               <button className="w-full py-3 px-6 bg-primary text-white rounded-full font-medium hover:bg-primary/80 transition-colors duration-200 space-glow">
@@ -257,7 +258,7 @@ const Pricing = () => {
             </div>
             <div className="text-center">
               <p className="text-3xl font-bold text-white mb-4">
-                0.75 <span className="text-blue-400">SOL</span>
+                3.2 <span className="text-blue-400">SOL</span>
                 <span className="text-sm font-normal block mt-1">per month</span>
               </p>
               <button className="w-full py-3 px-6 bg-primary text-white rounded-full font-medium hover:bg-primary/80 transition-colors duration-200 space-glow">
@@ -300,7 +301,7 @@ const Pricing = () => {
             </div>
             <div className="text-center">
               <p className="text-3xl font-bold text-white mb-4">
-                2.0 <span className="text-blue-400">SOL</span>
+                8.0 <span className="text-blue-400">SOL</span>
                 <span className="text-sm font-normal block mt-1">per month</span>
               </p>
               <button className="w-full py-3 px-6 bg-primary text-white rounded-full font-medium hover:bg-primary/80 transition-colors duration-200 space-glow">
@@ -317,7 +318,7 @@ const Pricing = () => {
           </p>
           <div className="flex flex-col md:flex-row md:items-center justify-center gap-4 md:gap-8">
             <p className="text-3xl md:text-4xl font-bold text-white">
-              4.5 <span className="text-blue-400">SOL</span>
+              20.0 <span className="text-blue-400">SOL</span>
               <span className="text-sm font-normal block">per month</span>
             </p>
             <button className="py-3 px-8 bg-primary text-white rounded-full font-medium hover:bg-primary/80 transition-colors duration-200 space-glow">
