@@ -74,6 +74,12 @@ const Navigation = () => {
               Pricing
             </button>
             <button
+              onClick={() => navigateToSection('faq')}
+              className="nav-link text-white/80 hover:text-white"
+            >
+              FAQ
+            </button>
+            <button
               onClick={() => navigateToSection('contact')}
               className="nav-link text-white/80 hover:text-white"
             >
@@ -127,6 +133,12 @@ const Navigation = () => {
               className="text-white/80 py-2 hover:text-white transition-colors text-left"
             >
               Pricing
+            </button>
+            <button
+              onClick={() => navigateToSection('faq')}
+              className="text-white/80 py-2 hover:text-white transition-colors text-left"
+            >
+              FAQ
             </button>
             <button
               onClick={() => navigateToSection('contact')}

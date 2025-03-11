@@ -5,8 +5,10 @@ import Hero from '@/components/Hero';
 import Guide from '@/components/Guide';
 import Statistics from '@/components/Statistics';
 import Pricing from '@/components/Pricing';
+import FAQ from '@/components/FAQ';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import Chatbot from '@/components/Chatbot';
 
 const Index = () => {
   // Add a smooth scroll behavior globally
@@ -28,9 +30,11 @@ const Index = () => {
         <Guide />
         <Statistics />
         <Pricing />
+        <FAQ />
         <Contact />
       </main>
       <Footer />
+      <Chatbot />
     </div>
   );
 };
