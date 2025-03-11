@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from 'react';
 import { CheckCircle2 } from 'lucide-react';
 
@@ -44,13 +45,13 @@ const Guide = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <h2 className="text-3xl md:text-5xl font-bold font-display mb-8 tracking-tight">
           <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-            Mastering Solana Flashloan Arbitrage
+            Mastering Solana Trading Bots
           </span>
         </h2>
         
         <p className="text-lg text-blue-200 max-w-3xl mx-auto mb-12">
-          Unlock the potential of Solana's high-speed blockchain with our comprehensive guide to flashloan arbitrage. 
-          Learn how to leverage flashloans to execute risk-free trades and maximize your profits.
+          Unlock the potential of Solana's high-speed blockchain with our comprehensive guide to automated trading. 
+          Learn how to leverage our bots to execute profitable trades and maximize your returns.
         </p>
         
         {/* Step-by-step Guide */}
@@ -60,9 +61,9 @@ const Guide = () => {
             <div className="flex items-center justify-center h-12 w-12 rounded-full bg-primary/10 mb-4 mx-auto">
               <CheckCircle2 size={32} className="text-primary" />
             </div>
-            <h3 className="text-xl font-semibold text-white mb-2">Understand Flashloans</h3>
+            <h3 className="text-xl font-semibold text-white mb-2">Choose Your Bot</h3>
             <p className="text-blue-200">
-              Grasp the fundamentals of flashloans and how they enable zero-risk arbitrage opportunities on Solana.
+              Select from our range of specialized trading bots designed for different strategies and market conditions.
             </p>
           </div>
           
@@ -71,9 +72,9 @@ const Guide = () => {
             <div className="flex items-center justify-center h-12 w-12 rounded-full bg-primary/10 mb-4 mx-auto">
               <CheckCircle2 size={32} className="text-primary" />
             </div>
-            <h3 className="text-xl font-semibold text-white mb-2">Identify Arbitrage Opportunities</h3>
+            <h3 className="text-xl font-semibold text-white mb-2">Set Your Parameters</h3>
             <p className="text-blue-200">
-              Learn to identify price discrepancies across different Solana DEXs for profitable arbitrage trades.
+              Customize your bot's settings to match your risk tolerance, trading goals, and preferred timeframes.
             </p>
           </div>
           
@@ -84,7 +85,7 @@ const Guide = () => {
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">Configure Your Bot</h3>
             <p className="text-blue-200">
-              Set up your Solana flashloan arbitrage bot with custom parameters for optimal trading performance.
+              Set up your Solana trading bot with custom parameters for optimal trading performance across different markets.
             </p>
           </div>
           
@@ -93,9 +94,9 @@ const Guide = () => {
             <div className="flex items-center justify-center h-12 w-12 rounded-full bg-primary/10 mb-4 mx-auto">
               <CheckCircle2 size={32} className="text-primary" />
             </div>
-            <h3 className="text-xl font-semibold text-white mb-2">Execute Risk-Free Trades</h3>
+            <h3 className="text-xl font-semibold text-white mb-2">Execute Automated Trades</h3>
             <p className="text-blue-200">
-              Execute flashloan transactions with confidence, knowing that your trades are risk-free and profitable.
+              Let your bot work 24/7, executing trades based on your strategy while you focus on other activities.
             </p>
           </div>
           
@@ -104,9 +105,9 @@ const Guide = () => {
             <div className="flex items-center justify-center h-12 w-12 rounded-full bg-primary/10 mb-4 mx-auto">
               <CheckCircle2 size={32} className="text-primary" />
             </div>
-            <h3 className="text-xl font-semibold text-white mb-2">Maximize Your Profits</h3>
+            <h3 className="text-xl font-semibold text-white mb-2">Track Performance</h3>
             <p className="text-blue-200">
-              Optimize your arbitrage strategies to maximize your profits and achieve financial success on Solana.
+              Monitor your bot's performance through our intuitive dashboard and make adjustments as needed.
             </p>
           </div>
           
@@ -115,9 +116,9 @@ const Guide = () => {
             <div className="flex items-center justify-center h-12 w-12 rounded-full bg-primary/10 mb-4 mx-auto">
               <CheckCircle2 size={32} className="text-primary" />
             </div>
-            <h3 className="text-xl font-semibold text-white mb-2">Stay Ahead of the Market</h3>
+            <h3 className="text-xl font-semibold text-white mb-2">Optimize & Scale</h3>
             <p className="text-blue-200">
-              Continuously monitor market conditions and adapt your strategies to stay ahead of the competition.
+              Continuously refine your strategies based on performance data and scale your operations as you grow.
             </p>
           </div>
         </div>
@@ -128,7 +129,7 @@ const Guide = () => {
             href="https://t.me/bitfancy" 
             className="px-8 py-4 bg-primary text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 active:translate-y-0 space-glow"
           >
-            Start Your Arbitrage Journey
+            Start Your Trading Journey
           </a>
         </div>
       </div>

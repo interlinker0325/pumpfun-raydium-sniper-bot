@@ -82,7 +82,7 @@ const Hero = () => {
       {/* Main content */}
       <div className="relative z-10 max-w-5xl text-center">
         <div className="mb-4 inline-flex items-center px-4 py-2 rounded-full border border-white/10 bg-black/30 backdrop-blur-sm">
-          <span className="text-xs md:text-sm font-medium text-blue-300">Revolutionizing DeFi on Solana</span>
+          <span className="text-xs md:text-sm font-medium text-blue-300">Revolutionizing Trading on Solana</span>
         </div>
         
         <h1 
@@ -90,9 +90,9 @@ const Hero = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <span className="text-foreground">Solana Flashloan</span>
+          <span className="text-foreground">Solana</span>
           <br />
-          <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Arbitrage Bot</span>
+          <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Trading Bot</span>
         </h1>
         
         <p 
@@ -100,7 +100,7 @@ const Hero = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          Leverage the power of flashloans to execute risk-free arbitrage opportunities across Solana DEXs, 
+          Leverage the power of automated trading to execute profitable opportunities across Solana DEXs, 
           maximizing your profit with millisecond precision. <span className="text-blue-400">To the moon!</span>
         </p>
         
@@ -138,17 +138,17 @@ const Hero = () => {
                 </div>
                 
                 <div className="text-green-400 font-mono text-xs md:text-sm space-y-2 overflow-hidden">
-                  <p><span className="text-blue-400">$</span> Initializing Solana Flashloan Bot...</p>
+                  <p><span className="text-blue-400">$</span> Initializing Solana Trading Bot...</p>
                   <p><span className="text-blue-400">$</span> Connecting to Solana mainnet-beta...</p>
                   <p><span className="text-blue-400">$</span> <span className="text-yellow-300">SUCCESS:</span> Connected to Solana network</p>
-                  <p><span className="text-blue-400">$</span> Scanning DEXs for arbitrage opportunities...</p>
-                  <p className="flex items-center"><span className="text-blue-400">$</span> <span className="animate-pulse">■</span> Analyzing price differences...</p>
+                  <p><span className="text-blue-400">$</span> Scanning DEXs for trading opportunities...</p>
+                  <p className="flex items-center"><span className="text-blue-400">$</span> <span className="animate-pulse">■</span> Analyzing market conditions...</p>
                   <div className="h-4"></div>
                   <p><span className="text-blue-400">$</span> <span className="text-yellow-300">OPPORTUNITY FOUND:</span></p>
                   <p><span className="text-blue-400">$</span> Route: SOL → USDC → RAY → SOL</p>
                   <p><span className="text-blue-400">$</span> DEXs: Orca → Raydium</p>
                   <p><span className="text-blue-400">$</span> Estimated profit: +0.0245 SOL</p>
-                  <p><span className="text-blue-400">$</span> Executing flashloan transaction...</p>
+                  <p><span className="text-blue-400">$</span> Executing transaction...</p>
                   <p className="flex items-center space-x-2">
                     <span className="text-blue-400">$</span>
                     <span className="inline-block animate-spin">⟳</span>
@@ -166,7 +166,7 @@ const Hero = () => {
           <span className="text-primary font-bold text-xl">S</span>
         </div>
         <div className="absolute -right-4 -top-4 w-12 h-12 glass-card-dark shadow-lg flex items-center justify-center -rotate-12 parallax space-glow" data-depth="2">
-          <span className="text-accent font-bold text-xl">F</span>
+          <span className="text-accent font-bold text-xl">T</span>
         </div>
       </div>
     </div>

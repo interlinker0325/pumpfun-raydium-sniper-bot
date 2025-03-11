@@ -11,13 +11,13 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center space-glow">
-                <span className="text-white font-bold text-lg">SF</span>
+                <span className="text-white font-bold text-lg">ST</span>
               </div>
-              <span className="font-display font-medium text-lg text-white">SolFlashBot</span>
+              <span className="font-display font-medium text-lg text-white">SolTrader</span>
             </div>
             
             <p className="text-white/70 mb-6 max-w-sm">
-              Leveraging the power of Solana flashloans to execute risk-free arbitrage opportunities across DEXs.
+              Leveraging the power of automation to execute profitable trading opportunities across Solana DEXs.
             </p>
             
             <div className="flex items-center space-x-4">
@@ -112,7 +112,7 @@ const Footer = () => {
         
         <div className="pt-8 mt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/50 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} SolFlashBot. All rights reserved.
+            © {new Date().getFullYear()} SolTrader. All rights reserved.
           </p>
           
           <div className="flex space-x-6">

@@ -45,7 +45,7 @@ const Navigation = () => {
             <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center space-glow">
               <VscRobot size={30}/>
             </div>
-            <span className="font-display font-medium text-lg text-white">SolFlashBot</span>
+            <span className="font-display font-medium text-lg text-white">SolTrader</span>
           </div>
           
           <div className="hidden md:flex space-x-8">
