@@ -68,6 +68,12 @@ const Navigation = () => {
               Statistics
             </button>
             <button
+              onClick={() => navigateToSection('pricing')}
+              className="nav-link text-white/80 hover:text-white"
+            >
+              Pricing
+            </button>
+            <button
               onClick={() => navigateToSection('contact')}
               className="nav-link text-white/80 hover:text-white"
             >
@@ -117,16 +123,23 @@ const Navigation = () => {
               Statistics
             </button>
             <button
+              onClick={() => navigateToSection('pricing')}
+              className="text-white/80 py-2 hover:text-white transition-colors text-left"
+            >
+              Pricing
+            </button>
+            <button
               onClick={() => navigateToSection('contact')}
               className="text-white/80 py-2 hover:text-white transition-colors text-left"
             >
               Contact
             </button>
-            <button
+            <a
+              href='https://t.me/bitfancy'
               className="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary/90 transition-colors my-2 space-glow"
             >
               Get Started
-            </button>
+            </a>
           </div>
         </div>
       )}
