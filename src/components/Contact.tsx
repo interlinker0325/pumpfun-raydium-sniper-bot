@@ -86,13 +86,13 @@ const Contact = () => {
             <a href="mailto:bitbanana717@gmail.com" className="text-blue-300 hover:text-blue-400 transition-colors">
               <Mail size={24} />
             </a>
-            <a href="https://github.com/bitfancy" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-400 transition-colors">
+            <a href="https://github.com/interlinker0325" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-400 transition-colors">
               <Github size={24} />
             </a>
-            <a href="https://t.me/bitfancy" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-400 transition-colors">
+            <a href="https://t.me/quang0325" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-400 transition-colors">
               <FaTelegram size={24} />
             </a>
-            <a href="https://discord.com/users/bitbanana717" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-400 transition-colors">
+            <a href="https://discord.com/users/super_0325" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-400 transition-colors">
               <FaDiscord size={28} />
             </a>
           </div>

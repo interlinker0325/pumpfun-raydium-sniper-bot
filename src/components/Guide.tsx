@@ -126,7 +126,7 @@ const Guide = () => {
         {/* Call to Action */}
         <div className="mt-12">
           <a 
-            href="https://t.me/bitfancy" 
+            href="https://t.me/quang0325" 
             className="px-8 py-4 bg-primary text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 active:translate-y-0 space-glow"
           >
             Start Your Trading Journey

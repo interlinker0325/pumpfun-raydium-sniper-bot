@@ -89,7 +89,7 @@ const Navigation = () => {
           
           <div className="hidden md:block">
             <a
-              href='https://t.me/bitfancy'
+              href='https://t.me/quang0325'
               className="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary/90 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary/50 shadow-md space-glow"
             >
               Get Started
@@ -147,7 +147,7 @@ const Navigation = () => {
               Contact
             </button>
             <a
-              href='https://t.me/bitfancy'
+              href='https://t.me/quang0325'
               className="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary/90 transition-colors my-2 space-glow"
             >
               Get Started
