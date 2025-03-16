@@ -1,69 +1,35 @@
-# Welcome to your Lovable project
+# solana crypto trading bot
 
-## Project info
+Welcome to the Solana Crypto Trading Bot repository! This project aims to provide a comprehensive solution for trading on the Solana blockchain. Whether you're a seasoned trader or just starting out, this bot can help you automate your trading strategies.
 
-**URL**: https://lovable.dev/projects/f7f94135-53b7-45a1-9fda-688e56a0bf89
+## Decentralized-Exchange-Trading-Scripts
 
-## How can I edit this code?
+Here, you'll find a collection of useful scripts designed to automate trading on various decentralized exchanges (DEX). These tools have been meticulously crafted from the ground up, with a focus on building a robust suite of degen-tools.
 
-There are several ways of editing your application.
+## How Can These Scripts Help You?
 
-**Use Lovable**
+If you're looking to set up your own degen toolbox for trading on DEX platforms, you've come to the right place. My scripts can simplify the process and enhance your trading experience.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f7f94135-53b7-45a1-9fda-688e56a0bf89) and start prompting.
+Are you a crypto enthusiast with unique degen trading ideas? Feel free to connect with me to discuss how these scripts can be tailored to your specific needs.
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Your Feedback Matters
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+We value your feedback! If you're using these scripts, please share your thoughts and suggestions. Your input will play a crucial role in shaping the future development of these tools. I am also planning to create a user-friendly Graphic User Interface (GUI) based on your feedback.
 
-Follow these steps:
+## Video Series Coming Soon
+Exciting news! I have a video series in the works to provide in-depth guidance on using these scripts effectively. To stay updated, make sure to subscribe to my [YouTube Channel](https://www.youtube.com/@henrytirla) 
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Services
+I build crypto bots and on-chain analytics tools that will give you an edge on the market, contact me let's work on your degen toolbox and bring your ideas to life.
+The more complex and intricate the idea, the better. I love a good challenge!
+ ### Mentorship
 
-# Step 3: Install the necessary dependencies.
-npm i
+  Have me as a mentor , where I offer my knowledgeable experience and strategies in trading cryptocurrencies. Whether you're a beginner looking to understand the basics or an 
+  experienced enthusiast aiming to enhance your skills, I'm here to help you on your crypto journey. Contact for more information.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Support My Work
+If these scripts have helped you, please consider supporting my work. Your support will help me continue to develop these tools and create more useful resources for the crypto community.
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f7f94135-53b7-45a1-9fda-688e56a0bf89) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
